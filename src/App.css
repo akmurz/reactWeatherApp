@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.container{
+    width: 1170px;
+    margin: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .wrapper {
+    width: 100%;
+    min-height: 100vh; /* Минимальная высота равная высоте окна */
+    background: url(./images/weather.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.weather{
+    width: 222px;
+    height: 63px;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #FFFFFF;
+    margin: 30px 0 23px 0;
+}
+.search{
+    width: 800px;
+    height: 94px;
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 20px 0 0;
+    color: #FFFFFF;
+    background: transparent;
+    margin: 0 0 112px 0;
+}
+
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.block{
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+.sub-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    width: 83px;
+    height: 83px;
+    color:  #FFFFFF;
+    cursor: pointer;
+    margin: 125px 0px 0px 20px;
+}
+.error-message{
+    color: rgb(255, 59, 59);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
 }
